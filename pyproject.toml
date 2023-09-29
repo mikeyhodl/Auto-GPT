@@ -1,11 +1,14 @@
-[project]
+[tool.poetry]
 name = "auto-gpt"
 version = "0.1.0"
-description = "A GPT based ai agent"
+description = ""
+authors = ["Merwane Hamadi <merwanehamadi@gmail.com>"]
 readme = "README.md"
 
-[tool.black]
-line-length = 88
-target-version = ['py310']
-include = '\.pyi?$'
-extend-exclude = ""
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
